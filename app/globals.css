@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #22c55e;
+  width: 0;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Update heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-share-tech-mono);
+}
+
+/* Update body text styles */
+p,
+span,
+div {
+  font-family: var(--font-space-grotesk);
+  letter-spacing: -0.02em;
+}
+
+/* Special elements that should keep the mono font */
+.font-mono {
+  font-family: var(--font-share-tech-mono) !important;
+}
+
